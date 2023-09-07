@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(204, 0, 187);
+    color: white;
+    text-align: right;
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+header img {
+    max-width: 100px;
+    max-height: 100px; /* Ensure the image is a square */
+    border-radius: 50%; /* Make the image round */
+    margin-left: 10px; /* Add some space between the image and text */
+}
+
+h1[data-testid="slackUserName"] {
+    font-size: 16px; /* Reduce the font size of the name */
+}
+
+main {
+    display: flex;
+    flex-direction: row; /* Display items horizontally */
+    align-items: center;
+    margin-top: 20px;
+}
+
+p, a {
+    margin-right: 20px; /* Add spacing between items */
+}
+
+a {
+    text-decoration: none;
+    color: #0074cc;
+    font-weight: bold;
+}
