@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Page</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/alternate-styles.css">
 </head>
 <body>
-    <header>
-        <h1 data-testid="slackUserName">Abdulkadir Ibrahim</h1>
-        <img src="profile.jpeg" alt="Abdulkadir Ibrahim" data-testid="slackDisplayImage">
+    <header class="header">
+        <div class="header-left">
+            <h1 class="header-title" data-testid="slackUserName">Abdulkadir Ibrahim</h1>
+            <p class="header-track" data-testid="myTrack">Frontend Developer</p>
+        </div>
+        <div class="header-right">
+            <img src="profile.jpeg" alt="Abdulkadir Ibrahim" class="header-image" data-testid="slackDisplayImage">
+        </div>
     </header>
     
-    <main>
-        <div>
-            <p data-testid="currentDayOfTheWeek">Monday</p>
+    <main class="main">
+        <div class="main-item">
+            <p class="main-label" data-testid="currentDayOfTheWeek">Day of the Week:</p>
+            <p class="main-content">Monday</p>
         </div>
         
-        <div>
-            <p data-testid="currentUTCTime">1631000000000</p>
+        <div class="main-item">
+            <p class="main-label" data-testid="currentUTCTime">UTC Time:</p>
+            <p class="main-content">1631000000000</p>
         </div>
         
-        <div>
-            <p data-testid="myTrack">Frontend</p>
-        </div>
-        
-        <div>
-            <a href="https://github.com/Amigoshugar" data-testid="githubURL">githubURL</a>
+        <div class="main-item">
+            <p class="main-label">GitHub:</p>
+            <a href="https://github.com/Amigoshugar" class="main-link" data-testid="githubURL">githubURL</a>
         </div>
     </main>
 </body>
 </html>
+

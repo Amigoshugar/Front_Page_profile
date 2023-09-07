@@ -1,43 +1,53 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a unique background color for the entire page */
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffcc00; /* Replace with your desired color code */
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Header styling */
 header {
-    background-color: rgb(177, 136, 161);
+    background-color: #0074cc;
     color: white;
-    text-align: right;
+    text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
 }
 
-header img {
+/* Header image styling */
+.header-image {
     max-width: 100px;
-    max-height: 50px; /* Ensure the image is a square */
-    border-radius: 100%; /* Make the image round */
-    margin-left: 10px; /* Add some space between the image and text */
+    max-height: 100px;
+    border-radius: 50%;
 }
 
-h1[data-testid="slackUserName"] {
-    font-size: 12px; /* Reduce the font size of the name */
-}
-
+/* Main content styling */
 main {
-    display: flex;
-    flex-direction: row; /* Display items horizontally */
-    align-items: center;
-    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
 }
 
-p, a {
-    margin-right: 20px; /* Add spacing between items */
+/* Paragraph styling */
+p {
+    margin: 10px 0;
 }
 
+/* Link styling */
 a {
     text-decoration: none;
     color: #0074cc;
     font-weight: bold;
+}
+
+/* Add hover effect for links */
+a:hover {
+    text-decoration: underline;
 }
